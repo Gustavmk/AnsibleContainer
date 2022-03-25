@@ -1,0 +1,13 @@
+ansible
+cffi
+ansible
+mitogen
+ansible-lint
+pywinrm[credssp]
+ansible[azure]
+requests-credssp
+ansible-lint
+azure-cli
+xmltodict
+packaging
+azurerm

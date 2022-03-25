@@ -1,0 +1,2 @@
+# examples: https://galaxy.ansible.com/docs/using/installing.html#installing-content
+- src: inverse_inc.windows

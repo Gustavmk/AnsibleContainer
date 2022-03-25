@@ -1,0 +1,23 @@
+plugin: azure_rm
+
+include_vm_resource_groups:
+  - '*'
+
+auth_source: cli
+
+conditional_groups:
+  linux: "'Ubuntu' in image.offer"
+  windows: "'WindowsServer' in image.offer"
+
+plain_host_names: yes
+
+#hostvar_expressions:
+#  ansible_host: (private_ipv4_addresses) | first
+
+
+# excludes a host from the inventory when any of these expressions is true, can refer to any vars defined on the host
+exclude_host_filters:
+# excludes hosts in the eastus region
+#  - location in ['eastus']
+# excludes hosts that are powered off
+  - powerstate != 'running'
