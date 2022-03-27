@@ -9,6 +9,9 @@ conditional_groups:
   linux: "'Ubuntu' in image.offer"
   windows: "'WindowsServer' in image.offer"
 
+keyed_groups:
+  - key: tags.role
+
 plain_host_names: yes
 
 #hostvar_expressions:
